@@ -16,6 +16,8 @@ So before we begin, we need to get familiar with the formal language.
 
 ## Set Theory 101
 
+## Next Steps
+
 **Prerequisites:**
 - Kotlin
 - Jetpack Compose basics
