@@ -80,9 +80,66 @@ In these examples, each property enables us to understand the behavior and chara
 
 ### Equivalence
 
-## Set Theory 101
+**Equivalence** means two things imply each other in a given context, even if they aren’t identical. We write this as `A ⇔ B`, meaning **A implies B and B implies A**. Equivalence doesn’t mean two things are the same; instead, they share key behaviors or properties **within specific bounds**.
 
-## Next Steps
+#### Example: Rain and Wet Ground
+
+Imagine a sealed greenhouse where the only water source is rain:
+
+- If it rains, the ground becomes wet:
+
+P: It rains ⇒ Q: The ground is wet
+
+- If the ground is wet, it must have rained (since there’s no other water source):
+
+Q: The ground is wet ⇒ P: It rains
+
+Here, `P ⇔ Q` because each implies the other in the greenhouse context. Outside this context (e.g., where sprinklers exist), this equivalence would no longer apply.
+
+### Proof of Equivalence: `MutableStateFlow` and `MutableState` up to Reactivity
+
+In Jetpack Compose, we can show that `MutableStateFlow` and `MutableState` are **equivalent up to reactivity** by proving that each one implies the same reactivity behavior in UI recomposition.
+
+#### Definitions
+
+- **Reactivity Property**: A state’s change triggers recomposition of any Composable observing it.
+
+#### Implications
+
+1. **`MutableStateFlow` implies reactivity**:
+   - When a `MutableStateFlow` emits a new value, any Composable collecting it updates:
+   
+     ```
+     F: MutableStateFlow emits new value ⇒ C: Collected Composable updates
+     ```
+
+2. **`MutableState` implies reactivity**:
+   - When a `MutableState` changes, any Composable reading this state recomposes:
+   
+     ```
+     M: MutableState changes ⇒ C: Reading Composable updates
+     ```
+
+#### Equivalence Statement
+
+Since `MutableStateFlow` and `MutableState` each imply UI recomposition in Jetpack Compose, we conclude:
+
+F ⇔ M up to reactivity in Compose
+
+Thus, `MutableStateFlow` and `MutableState` are **equivalent up to the reactivity property** within the Compose framework, meaning they can be used interchangeably for triggering UI recomposition, though they remain distinct in other behaviors.
+
+## Conclusion
+
+TODO: Write a conclusion with a tl;dr of what we learned about the formal language and why it's important for becoming a better software engineer and how science and Android development are linked.
+
+
+## Contents (edit to be what's the first pages of the book agenda that I don't know how it's called)
+
+- Navigation
+- Data layer
+- UI layer
+- Idomatic Kotlin
+- Unit testing
 
 **Prerequisites:**
 - Kotlin
