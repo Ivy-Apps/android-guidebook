@@ -127,21 +127,3 @@ Since `MutableStateFlow` and `MutableState` each imply UI recomposition in Jetpa
 F ⇔ M up to reactivity in Compose
 
 Thus, `MutableStateFlow` and `MutableState` are **equivalent up to the reactivity property** within the Compose framework, meaning they can be used interchangeably for triggering UI recomposition, though they remain distinct in other behaviors.
-
-## Conclusion
-
-TODO: Write a conclusion with a tl;dr of what we learned about the formal language and why it's important for becoming a better software engineer and how science and Android development are linked.
-
-
-## Contents (edit to be what's the first pages of the book agenda that I don't know how it's called)
-
-- Navigation
-- Data layer
-- UI layer
-- Idomatic Kotlin
-- Unit testing
-
-**Prerequisites:**
-- Kotlin
-- Jetpack Compose basics
-- High school math
