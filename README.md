@@ -8,9 +8,9 @@ So before we begin, we need to get familiar with the formal language.
 
 ## Formal language
 
-### Properties
-
 ### Implications
+
+### Properties
 
 ### Equivalence
 
