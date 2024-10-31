@@ -23,8 +23,6 @@ Think of it this way: "If it rains, then the ground is wet." In logic terms, thi
 This means if it’s raining, we can be sure the ground is wet. However, the reverse isn’t always true: if the ground is wet, it doesn’t guarantee it has rained—it could be a sprinkler or someone washing the street.
 
 So, an implication is one-way: `P ⇒ Q` does not mean `Q ⇒ P`. This is a key part of formal logic that helps build precise reasoning.
- 
-### Properties
 
 ### Equivalence
 
