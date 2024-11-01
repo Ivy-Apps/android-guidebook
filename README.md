@@ -40,29 +40,25 @@ A set is a collection of unique objects (items) that isn't ordered. Symbolically
 2. An item can't be repeated/duplicated:
 - `{A, B, C} + B = {A, B, C}`
 
-### Properties
+## Properties
 
-A property is a defining characteristic of an object or concept that brings a set of implications. When an object has a property, certain logical conclusions follow from it, allowing us to precisely define its behavior or characteristics.
+A **property** is a defining characteristic of an object or concept that implies certain logical consequences. When an object has a property, specific conclusions follow, allowing us to precisely define its behavior or characteristics.
 
-#### Example 1: Equilateral Triangle
+### Example: Square
+**Property**: Being a square.
 
-**Property**: Being an equilateral triangle.
+#### Implications:
 
-**Implications**:
+1. If a shape is a square, all four sides are equal in length:
+   - **P**: Shape is a square ⇒ **Q**: All sides are equal
 
-1. If a triangle is equilateral, all three sides are equal in length:
+2. This property also implies that each internal angle is 90 degrees:
+   - **P**: Shape is a square ⇒ **R**: Each angle is 90°
 
-   - **P**: Triangle is equilateral ⇒ **Q**: All sides are equal
+3. Additionally, a square remains unchanged if rotated by 90°, 180°, or 270°:
+   - **P**: Shape is a square ⇒ **S**: Rotation by 90°, 180°, or 270° leaves it unchanged
 
-2. This property also implies that each angle in the triangle is 60 degrees:
-
-   - **P**: Triangle is equilateral ⇒ **R**: Each angle is 60 degrees
-
-3. Additionally, rotating an equilateral triangle by 120 degrees or 240 degrees leaves it unchanged due to its symmetry:
-
-   - **P**: Triangle is equilateral ⇒ **S**: Rotation by 120° or 240° leaves it unchanged
-
-These implications mean that knowing a triangle is equilateral allows us to derive specific, logical attributes about its structure and behavior.
+These implications show that knowing a shape is a square allows us to logically derive its specific attributes and symmetry properties.
 
 #### Example 2: Reactivity in Jetpack Compose
 
