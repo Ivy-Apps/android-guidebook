@@ -7,6 +7,20 @@ Android Development is above all software engineering, which, like any engineeri
 > [!NOTE]
 > Before we begin, we need to get familiar with the formal language so we can communicate effectively instead of debating what's best practice and anti-pattern based on arbitrary articles and opinions.
 
+## Topics
+- [Navigation]()
+- [Modularization]()
+- [Unit Testing]()
+- [Property-based Testing]()
+- [CI & CD]()
+- [Data layer]()
+- [Domain layer]()
+- [UI layer]()
+- [MVI]()
+- [Efficient Compose UI]()
+- [Screenshot testing UI]()
+- [Dependency Injection (DI)]()
+
 ## Implications
 
 An implication is a one-way logical statement that takes the form "if P, then Q", often written as **P ⇒ Q** (P implies Q). Here:
