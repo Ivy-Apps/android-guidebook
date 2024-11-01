@@ -78,72 +78,67 @@ These implications allow for precise control and prediction of UI behavior in Co
 > [!TIP]
 >  Working with properties allows for precise and explicit definitions of behavior through implications. Having formal language and mathematical rigor in place, let's use logic to derive more implications and analyze our approaches. This is a step further than arguing whether the solution is KISS (Keep It Simple Stupid) or DRY (Don't Repeat Yourself).
 
-
 ## Equivalence
 
-Equivalence means two statements imply each other within a given context, even if they aren’t identical in every aspect. We write this as **A ⇔ B**, meaning **A** implies **B** and **B** implies **A**. Equivalence doesn't mean the two things are the same; instead, they share key behaviors or properties within specific boundaries.
+Equivalence means two statements or properties imply each other within a given context, even if they aren’t identical in every aspect. We write this as **A ⇔ B**, meaning **A** implies **B** and **B** implies **A**. Equivalence does not mean the two things are the same; rather, it indicates that they share key behaviors or properties within specific boundaries.
 
 ### Example: Rain and Wet Sidewalk
 
 Let's consider a familiar scenario to illustrate equivalence:
 
-**Context**: In a small town where there are no sprinklers, street cleaning, or any other sources of water that can wet the sidewalk. The only way the sidewalk gets wet is when it rains.
+**Context**: In a small town without sprinklers, street cleaning, or other sources of water, the only way the sidewalk becomes wet is when it rains.
 
-**Implications**:
+**Properties and Implications**:
 
-1. If it is raining, then the sidewalk is wet:
+1. **Property**: If it rains, the sidewalk becomes wet:
+   - **P**: "It rains" implies **Q**: "The sidewalk is wet" (P ⇒ Q).
 
-   - **P**: It is raining ⇒ **Q**: The sidewalk is wet
-
-   This means that rain causes the sidewalk to become wet.
-
-2. If the sidewalk is wet, then it is raining:
-
-   - **Q**: The sidewalk is wet ⇒ **P**: It is raining
-
-   In this context, since there's no other way for the sidewalk to get wet, a wet sidewalk implies that it's raining.
+2. **Property**: If the sidewalk is wet, it must have rained:
+   - **Q**: "The sidewalk is wet" implies **P**: "It rains" (Q ⇒ P).
 
 **Equivalence**:
 
-Since both **P** implies **Q** and **Q** implies **P**, we have an equivalence:
+Since both **P ⇒ Q** and **Q ⇒ P** hold, we establish **P ⇔ Q**:
 
 - **P ⇔ Q**
 
-This means "It is raining" and "The sidewalk is wet" are equivalent in this context—they always occur together.
+This equivalence means that "It rains" and "The sidewalk is wet" share the same implications within this context; they occur together, making each statement true if and only if the other is also true.
 
 > [!IMPORTANT]
-> **Changing the Context**:
+> **Changing Context**:
 >
-> If we consider a city where sprinklers or street cleaning exist, the sidewalk could be wet without rain. In this new context, **Q** (the sidewalk is wet) does not necessarily imply **P** (it is raining) anymore, and the equivalence no longer holds.
+> If we consider a city where sprinklers or street cleaning exist, the sidewalk could become wet without rain. In this context, **Q** (the sidewalk is wet) no longer implies **P** (it is raining), and the equivalence no longer holds.
 
-This example shows how equivalence depends on context and helps us understand that two different statements can be logically linked such that one being true guarantees the other is true, and vice versa, within specific boundaries.
+This example shows how equivalence depends on specific properties and context, allowing us to understand when two statements are logically linked such that one being true guarantees the other is also true.
 
-#### Proof of Equivalence: `MutableStateFlow` and `MutableState` up to Reactivity
+### Proof of Equivalence: `MutableState` and `MutableStateFlow` in Terms of Reactivity in Jetpack Compose
 
-In Jetpack Compose, we can demonstrate that `MutableStateFlow` and `MutableState` are equivalent up to reactivity by showing that each one implies the same reactivity behavior in UI recomposition.
+In Jetpack Compose, both `MutableState` and `MutableStateFlow` exhibit reactivity. We demonstrate their equivalence by showing that each implies the same reactivity property in UI recomposition.
 
-**Definitions**
+**Definitions and Reactivity Property**
 
-- **Reactivity Property**: A state’s change triggers recomposition of any Composable observing it.
+1. **Reactivity Property**: A change in a state value triggers recomposition in any Composable observing that state.
 
-**Implications**
+**Implications of `MutableState`**
 
-1. **`MutableStateFlow` implies reactivity**:
+1. **Property**: If a variable is defined as `MutableState`, then any change in its value triggers recomposition of any Composable reading this `State`.
+   - **M**: "Variable is a `MutableState`" implies **C**: "Composable observing it recomposes on change" (M ⇒ C).
 
-   When a `MutableStateFlow` emits a new value, any Composable collecting it updates:
+2. **Property**: If a Composable recomposes due to observing a state, that state could be defined as `MutableState`.
+   - **C**: "Composable recomposes on state change" implies **M**: "State is a `MutableState`" (C ⇒ M).
 
-   - **F**: `MutableStateFlow` emits new value ⇒ **C**: Collected Composable updates
+**Implications of `MutableStateFlow`**
 
-2. **`MutableState` implies reactivity**:
+1. **Property**: If a variable is defined as `MutableStateFlow`, any emission of a new value triggers recomposition in any Composable collecting it.
+   - **F**: "Variable is a `MutableStateFlow`" implies **C**: "Composable observing it recomposes on new emission" (F ⇒ C).
 
-   When a `MutableState` changes, any Composable reading this state recomposes:
-
-   - **M**: `MutableState` changes ⇒ **C**: Reading Composable updates
+2. **Property**: If a Composable recomposes due to a state change, that state could be defined as `MutableStateFlow`.
+   - **C**: "Composable recomposes on state change" implies **F**: "State is a `MutableStateFlow`" (C ⇒ F).
 
 **Equivalence Statement**
 
-Since `MutableStateFlow` and `MutableState` each imply the same reactivity behavior in Jetpack Compose, we conclude:
+Since both `MutableState` and `MutableStateFlow` imply the same reactivity property in Jetpack Compose (that any state change triggers recomposition of dependent Composables), we conclude that within the context of reactivity in Compose:
 
-- **F ⇔ M** (up to reactivity in Compose)
+- **M ⇔ F**
 
-This means that, concerning reactivity within the Compose framework, `MutableStateFlow` and `MutableState` are equivalent—they can be used interchangeably for triggering UI recomposition, though they remain distinct in other behaviors.
+Thus, `MutableState` and `MutableStateFlow` are equivalent in terms of their reactivity behavior in Compose. This equivalence holds specifically within the Compose framework, where both types ensure UI recomposition in response to state changes, though they may differ in other aspects outside this context.
