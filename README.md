@@ -11,9 +11,9 @@ Android Development is above all software engineering, which, like any engineeri
 
 ### Implications
 
-An implication is a one-way logical statement that takes the form "if P, then Q", often written as **P ⇒ Q**. Here:
+An implication is a one-way logical statement that takes the form "if P, then Q", often written as **P ⇒ Q** (P implies Q). Here:
 
-- **P** is the cause or assumption (what we start with).
+- **P** is the cause or assumption (what's the condition).
 - **Q** is the result (what follows if P is true).
 
 Think of it this way: "If it rains, then the ground gets wet." In logical terms, this is **P ⇒ Q** where:
@@ -24,6 +24,9 @@ Think of it this way: "If it rains, then the ground gets wet." In logical terms,
 This means if it's raining, we can be sure that the ground is wet. However, the reverse isn't always true: if the ground is wet, it doesn't guarantee it has rained—it could be wet for other reasons, like a sprinkler system.
 
 So, an implication is one-way: **P ⇒ Q** does not mean **Q ⇒ P**. This is a key part of formal logic that helps build precise reasoning.
+
+> [!TIP]
+> Implications are neither good or bad, they are merely facts. This makes them good for discussing technical approaches because compared to Pros/Cons or Benefits/Drawbacks implications aren't subjective and biased.
 
 ### Properties
 
