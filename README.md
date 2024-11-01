@@ -21,6 +21,8 @@ Android Development is above all software engineering, which, like any engineeri
 - [Screenshot testing UI]()
 - [Dependency Injection (DI)]()
 
+# Formal language 
+
 ## Implications
 
 An implication is a one-way logical statement that takes the form "if P, then Q", often written as **P ⇒ Q** (P implies Q). Here:
