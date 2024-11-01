@@ -7,9 +7,7 @@ Android Development is above all software engineering, which, like any engineeri
 > [!NOTE]
 > Before we begin, we need to get familiar with the formal language so we can communicate effectively instead of debating what's best practice and anti-pattern based on arbitrary articles and opinions.
 
-## Formal Language
-
-### Implications
+## Implications
 
 An implication is a one-way logical statement that takes the form "if P, then Q", often written as **P ⇒ Q** (P implies Q). Here:
 
@@ -28,11 +26,11 @@ So, an implication is one-way: **P ⇒ Q** does not mean **Q ⇒ P**. This is a 
 > [!TIP]
 > Implications are neither good or bad, they are merely facts. This makes them good for discussing technical approaches because compared to Pros/Cons or Benefits/Drawbacks implications aren't subjective and biased.
 
-### Sets
+## Sets
 
 A set is a collection of unique objects (items) that isn't ordered. Symbolically, sets are denoted with uppercase letters and curly braces. For example: `A = {1, 2, 3}`, `M = { "World", "Hello",}`.
 
-#### Set key properties
+**Set key properties**
 
 1. Order doesn’t matter:
 - `{1, 2, 3} = {3, 2, 1}`
@@ -60,7 +58,7 @@ A **property** is a defining characteristic of an object or concept that implies
 
 These implications show that knowing a shape is a square allows us to logically derive its specific attributes and symmetry properties.
 
-#### Example 2: Reactivity in Jetpack Compose
+### Example 2: Reactivity in Jetpack Compose
 
 **Property**: Reactivity in Jetpack Compose with `State` and `Flow`.
 
@@ -80,11 +78,11 @@ These implications show that knowing a shape is a square allows us to logically 
 
 In these examples, each property enables us to understand the behavior and characteristics of an object formally and logically, allowing precise control and prediction in development.
 
-### Equivalence
+## Equivalence
 
 Equivalence means two statements imply each other within a given context, even if they aren’t identical in every aspect. We write this as **A ⇔ B**, meaning **A** implies **B** and **B** implies **A**. Equivalence doesn't mean the two things are the same; instead, they share key behaviors or properties within specific boundaries.
 
-#### Example: Rain and Wet Sidewalk
+### Example: Rain and Wet Sidewalk
 
 Let's consider a familiar scenario to illustrate equivalence:
 
