@@ -1,11 +1,11 @@
 # Android Guidebook
 
-> An opinionated collection of learnings from my Android experience as a founding engineer in 4 startups and a contractor at Toptal and Reddit.
+> An opinionated collection of learnings from my 8 years of Android experience as a founding engineer in 4 startups and a contractor at Toptal and Reddit.
 
-Android Development is, above all, software engineering, which, like any engineering field, is based on science. When it comes to science, math and formal logic rule the game. In this guidebook, we'll look into Android Development and software engineering best practices through the lens of science.
+Android Development is above all software engineering, which, like any engineering field, is based on science. When it comes to science, math and formal logic rule the game. In this guidebook, we'll look into Android Development and software engineering through the lens of science.
 
 > [!NOTE]
-> Before we begin, we need to get familiar with the formal language.
+> Before we begin, we need to get familiar with the formal language so we can communicate effectively instead of debating what's best practice and anti-pattern based on arbitrary articles and opinions.
 
 ## Formal Language
 
