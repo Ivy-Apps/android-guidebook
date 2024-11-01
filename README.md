@@ -28,6 +28,18 @@ So, an implication is one-way: **P ⇒ Q** does not mean **Q ⇒ P**. This is a 
 > [!TIP]
 > Implications are neither good or bad, they are merely facts. This makes them good for discussing technical approaches because compared to Pros/Cons or Benefits/Drawbacks implications aren't subjective and biased.
 
+### Sets
+
+A set is a collection of unique objects (items) that isn't ordered. Symbolically, sets are denoted with uppercase letters and curly braces. For example: `A = {1, 2, 3}`, `M = { "World", "Hello",}`.
+
+#### Set key properties
+
+1. Order doesn’t matter:
+- `{1, 2, 3} = {3, 2, 1}`
+
+2. An item can't be repeated/duplicated:
+- `{A, B, C} + B = {A, B, C}`
+
 ### Properties
 
 A property is a defining characteristic of an object or concept that brings a set of implications. When an object has a property, certain logical conclusions follow from it, allowing us to precisely define its behavior or characteristics.
