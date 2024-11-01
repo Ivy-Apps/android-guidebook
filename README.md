@@ -42,7 +42,7 @@ A set is a collection of unique objects (items) that isn't ordered. Symbolically
 
 A **property** is a defining characteristic of an object or concept that implies certain logical consequences. When an object has a property, specific conclusions follow, allowing us to precisely define its behavior or characteristics.
 
-### Example: Square
+### Example 1: Square
 **Property**: Being a square.
 
 #### Implications:
@@ -60,23 +60,20 @@ These implications show that knowing a shape is a square allows us to logically 
 
 ### Example 2: Reactivity in Jetpack Compose
 
-**Property**: Reactivity in Jetpack Compose with `State` and `Flow`.
+**Property**: Reactivity in Jetpack Compose.
 
-**Implications**:
+#### Implications
 
-1. If a variable is declared as a `State`, any change to its value will automatically trigger a recomposition of any UI component reading this state:
+1. If a variable is a reactive `State`, any change in its value triggers recomposition in any Composable that reads it:
+   - **P**: Variable is a reactive `State` ⇒ **Q**: Composable reading this `State` recomposes on value change
 
-   - **P**: Variable is a `State` in Compose ⇒ **Q**: UI component recomposes on value change
+2. If multiple Composables read the same reactive `State`, any change in that `State` triggers recomposition in each dependent Composable:
+   - **P**: Reactive `State` value changes ⇒ **Q**: All dependent Composables recompute
 
-2. If a `Flow` emits a new value and is collected in a Composable, the UI component updates according to the emitted value:
+3. If a Composable reads multiple reactive `State` values, only the parts of the UI that depend on each specific `State` recompose when that `State` changes, optimizing rendering performance:
+   - **P**: Composable reads multiple reactive `States` ⇒ **Q**: Only affected parts of the UI recompute on specific `State` change
 
-   - **P**: `Flow` emits new value ⇒ **Q**: Collected Composable updates with new data
-
-3. If a Composable function reads multiple `State` values, any change in those values leads to recomposition only of the parts that depend on the changed states, optimizing performance:
-
-   - **P**: Composable reads multiple `States` ⇒ **Q**: Recomposition occurs only for affected parts
-
-In these examples, each property enables us to understand the behavior and characteristics of an object formally and logically, allowing precise control and prediction in development.
+These implications allow for precise control and prediction of UI behavior in Compose when working with reactive `State`.
 
 ## Equivalence
 
