@@ -24,7 +24,7 @@ This means if it's raining, we can be sure that the ground is wet. However, the 
 So, an implication is one-way: **P ⇒ Q** does not mean **Q ⇒ P**. This is a key part of formal logic that helps build precise reasoning.
 
 > [!TIP]
-> Implications are neither good or bad, they are merely facts. This makes them good for discussing technical approaches because compared to Pros/Cons or Benefits/Drawbacks implications aren't subjective and biased.
+> Implications are neither good or bad, they are merely facts. This makes them good for discussing technical approaches because compared to Pros/Cons or Benefits/Drawbacks, implications aren't subjective nor biased.
 
 ## Sets
 
