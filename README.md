@@ -111,7 +111,7 @@ This equivalence means that "It rains" and "The sidewalk is wet" share the same 
 
 This example shows how equivalence depends on specific properties and context, allowing us to understand when two statements are logically linked such that one being true guarantees the other is also true.
 
-### Proof of Equivalence: `MutableState` and `MutableStateFlow` in Terms of Reactivity in Jetpack Compose
+### Proof of Equivalence: `MutableState` and `MutableStateFlow` in terms of Reactivity in Jetpack Compose
 
 In Jetpack Compose, both `MutableState` and `MutableStateFlow` exhibit reactivity. We demonstrate their equivalence by showing that each implies the same reactivity property in UI recomposition.
 
