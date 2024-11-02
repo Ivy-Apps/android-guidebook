@@ -5,7 +5,7 @@
 Android Development is above all software engineering, which, like any engineering field, is based on science. When it comes to science, math and formal logic rule the game. In this guidebook, we'll look into Android Development and software engineering through the lens of science.
 
 > [!NOTE]
-> Before we begin, we need to get familiar with the formal language so we can communicate effectively instead of debating what's best practice and anti-pattern based on arbitrary articles and opinions.
+> Before we begin, we need to get familiar with the formal language so we can communicate effectively instead of debating what's a best practice or an anti-pattern based on arbitrary articles and opinions.
 
 ## Topics
 - [Navigation]()
