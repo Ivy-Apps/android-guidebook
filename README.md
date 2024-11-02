@@ -57,7 +57,7 @@ A set is a collection of unique objects (items) that isn't ordered. Symbolically
 
 ## Properties
 
-A **property** is a defining characteristic of an object or concept that implies certain logical consequences. When an object has a property, specific conclusions follow, allowing us to precisely define its behavior or characteristics.
+A property is a set of implications defining characteristic of an object or concept. When an object has a property, specific conclusions follow, allowing us to precisely define its behavior or characteristics.
 
 ### Example 1: Square
 **Property**: Being a square.
