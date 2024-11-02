@@ -198,10 +198,15 @@ In programming we often work with collections or need to analyze multiple possib
 
 ### **∀** for all
 
-**∀** (every) states that some property or conditions holds for all possible values in the set.
+**∀** (every) states that some property holds for all possible values in the set.
 - **(∀n∈Int: n < Int.MAX_VALUE/2)(2*n ⇒ even number)**
-- Every Int **n** that is smaller than Int.MAX_VALUE/2 when multiplied by 2 is an even number
+- Every integer **n** that is smaller than Int.MAX_VALUE/2 when multiplied by 2 is an even number
   
 ### **∃** there exists
 
-### Quantifiers examples
+**∃** (exists) states that there is at least one value in the set that satisfy some property.
+- **(∃n∈Int: n < 10)(n+n = n*n)**
+- There exists an integer **n** that is smaller than 10, such that **n+n=n*n**.
+- _In this example such integer is 2 because 2+2=2*2_
+
+### Quantifier examples
