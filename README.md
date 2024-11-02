@@ -87,18 +87,18 @@ These implications show that knowing a shape is a square allows us to logically 
 #### Implications
 
 1. If a variable is a reactive `State`, any change in its value triggers recomposition in any Composable that reads it:
-   - **P**: Variable is a reactive `State` ⇒ **Q**: Composable reading this `State` recomposes on value change
+   - **P**: Variable is a reactive `State` ⇒ **R**: Composable reading this `State` recomposes on value change
 
 2. If multiple Composables read the same reactive `State`, any change in that `State` triggers recomposition in each dependent Composable:
-   - **P**: Reactive `State` value changes ⇒ **M**: All dependent Composables recompute
+   - **P**: Reactive `State` value changes ⇒ **DR**: All dependent Composables recompose
 
 3. If a Composable reads multiple reactive `State` values, only the parts of the UI that depend on each specific `State` recompose when that `State` changes, optimizing rendering performance:
-   - **P**: Composable reads multiple reactive `States` ⇒ **Q**: Only affected parts of the UI recompose on specific `State` change
+   - **P**: Composable reads multiple reactive `States` ⇒ **A**: Only affected parts of the UI recompose on specific `State` change
 
 These implications allow for precise control and prediction of UI behavior in Compose when working with reactive `State` in Compose.
 
 > [!TIP]
->  Properties allows for precise and explicit definitions of behavior through implications. Having formal language and mathematical rigor in place, let's us use logic to derive more implications and analyze our approaches. This is a step further than arguing whether the solution is KISS (Keep It Simple Stupid) or DRY (Don't Repeat Yourself).
+>  Properties provide precise and explicit definitions of behavior through implications. Having formal language and mathematical rigor in place, let's us use formal logic to derive more implications and analyze our approaches. This is a step further than arguing whether the solution is KISS (Keep It Simple Stupid) or DRY (Don't Repeat Yourself).
 
 ## Equivalence
 
