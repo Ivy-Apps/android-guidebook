@@ -160,7 +160,7 @@ This example shows how equivalence depends on specific properties and context, a
 
 Since both `State<T>` and `StateFlow<T>` satisfy the reactivity property **R** and their behaviors are indistinguishable to observing Composables, they are behaviorally equivalent in this context:
 
-**S ≅ F** with respect to reactivity in Jetpack Compose.
+**S ≅ F** (**S** is behaviorally equivalent to **F**) with respect to reactivity in Jetpack Compose.
 
 **Code Demonstration:**
 ```kotlin
@@ -183,4 +183,4 @@ fun <T> State<T>.toStateFlow(): StateFlow<T> {
 
 **Conclusion:**
 
-**Behavioral Equivalence:** State<T> and StateFlow<T> (when collected via collectAsState()) are behaviorally equivalent in the context of reactivity in Jetpack Compose.
+**Behavioral Equivalence:** `State<T>` and `StateFlow<T>` are behaviorally equivalent in the context of reactivity in Jetpack Compose and we can use them interchangeably.
