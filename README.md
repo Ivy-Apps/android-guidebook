@@ -21,6 +21,9 @@ Android Development is above all software engineering, which, like any engineeri
 - [Screenshot testing UI]()
 - [Dependency Injection (DI)]()
 - [Idiomatic Kotlin for expressing complex logic elegantly]()
+- [Gradle Build system]()
+- [Android Studio Live Templates]()
+- [Centralize your dependencies with a version catalog]()
 
 # Formal language 
 
