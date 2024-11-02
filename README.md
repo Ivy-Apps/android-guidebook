@@ -209,7 +209,7 @@ In programming we often work with collections or need to analyze multiple possib
 - There exists an integer **n** that is smaller than 10, such that **n+n=n*n**.
 - _(in this example such integer is 2 because 2+2=2*2)_
 
-### Quantifier examples
+### Quantifiers examples
 
 #### Example 1
 
