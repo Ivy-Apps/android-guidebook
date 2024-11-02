@@ -184,3 +184,12 @@ fun <T> State<T>.toStateFlow(): StateFlow<T> {
 **Conclusion:**
 
 **Behavioral Equivalence:** `State<T>` and `StateFlow<T>` are behaviorally equivalent in the context of reactivity in Jetpack Compose and we can use them interchangeably.
+
+> [!TIP]
+> **In Practice**
+> 
+> We'll use **S ≅ F in C** (behavioral equivalence between S and F in context C) a lot because it'll allow us to find equivalent solutions and then optimize for what we need: e.g. simplicity, performance, type-safety.
+> 1. Find a set of equivalent solutions
+> 2. Rank them by the properties that we care about.
+
+## Quantifiers
