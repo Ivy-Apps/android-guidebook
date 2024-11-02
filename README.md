@@ -199,8 +199,8 @@ In programming we often work with collections or need to analyze multiple possib
 ### **∀** for all
 
 **∀** (every) states that some property holds for all possible values in the set.
-- **(∀n∈Int: n < Int.MAX_VALUE/2)(2*n ⇒ even number)**
-- Every integer **n** that is smaller than Int.MAX_VALUE/2 when multiplied by 2 is an even number
+- **(∀n∈Int: n < Int.MAX_VALUE/2)(x=2*n ⇒ x even number)**
+- Every integer **n** that is smaller than Int.MAX_VALUE/2 when multiplied by 2 is an even number.
   
 ### **∃** there exists
 
