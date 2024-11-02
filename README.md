@@ -193,3 +193,15 @@ fun <T> State<T>.toStateFlow(): StateFlow<T> {
 > 2. Rank them by the properties that we care about.
 
 ## Quantifiers
+
+In programming we often work with collections or need to analyze multiple possible cases. To be able to communicate effectively and prove that our programs work we need a formal way to reason about quantities.
+
+### **∀** for all
+
+**∀** (every) states that some property or conditions holds for all possible values in the set.
+- **(∀n∈Int: n < Int.MAX_VALUE/2)(2*n ⇒ even number)**
+- Every Int **n** that is smaller than Int.MAX_VALUE/2 when multiplied by 2 is an even number
+  
+### **∃** there exists
+
+### Quantifiers examples
