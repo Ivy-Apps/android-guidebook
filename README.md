@@ -136,47 +136,51 @@ This equivalence means that "It rains" and "The sidewalk is wet" share the same 
 
 This example shows how equivalence depends on specific properties and context, allowing us to understand when two statements are logically linked such that one being true guarantees the other is also true.
 
-### Proof of Equivalence: Compose `State` and `StateFlow` in terms of reactivity in Jetpack Compose
 
-In Jetpack Compose, both `State` and `StateFlow` exhibit reactivity. We demonstrate their equivalence by showing that each implies the same reactivity property in UI recomposition.
+### Proof of Behavioral Equivalence: Compose State and StateFlow in Jetpack Compose Reactivity
 
-**Definitions and Reactivity Property**
+**Context:** Examining reactivity in Jetpack Compose — how changes in state values trigger recomposition in observing Composables.
 
-1. **Reactivity Property**: A change in a state value triggers recomposition in any Composable observing that state.
+**Definitions:**
 
-**Implications of Compose `State`**
+1. **Reactivity Property (R):** A change in state value triggers recomposition in any Composable observing that state.
 
-1. **Property**: If a variable is defined as `State`, then any change in its value triggers recomposition of any Composable reading this `State`.
-   - **S**: "Variable is a `State`" implies **C**: "Composable observing it recomposes on change" (S ⇒ C).
+2. **Compose `State<T>` (S):** A state holder that triggers recomposition when its value changes.
 
-**Implications of `MutableStateFlow`**
+3. **`StateFlow<T>` (F):** A flow that, when collected via collectAsState(), triggers recomposition on new emissions.
 
-1. **Property**: If a variable is defined as `MutableStateFlow`, any emission of a new value triggers recomposition in any Composable collecting it.
-   - **F**: "Variable is a `MutableStateFlow`" implies **C**: "Composable observing it recomposes on new emission" (F ⇒ C).
 
-**Equivalence Statement**
+**Implications:**
 
-Since both `State` and `MutableStateFlow` imply the same reactivity property in Jetpack Compose (that any state change triggers recomposition of dependent Composables), we conclude that within the context of reactivity in Compose:
+**S ⇒ R:** Changes in `State<T>` trigger recomposition.
 
-- **M ⇔ F** (up to reactivity in Compose)
+**F ⇒ R:** Emissions from `StateFlow<T>` collected via collectAsState() trigger recomposition.
 
-We can also prove that with Kotlin code:
+**Behavioral Equivalence Statement:**
+
+Since both `State<T>` and `StateFlow<T>` satisfy the reactivity property **R** and their behaviors are indistinguishable to observing Composables, they are behaviorally equivalent in this context:
+
+**S ≅ F** with respect to reactivity in Jetpack Compose.
+
+**Code Demonstration:**
 ```kotlin
-// StateFlow -> Compose state
+// StateFlow to Compose State
 @Composable
-fun <T> StateFlow<T>.toCompose(): State<T> {
-  return this.collectAsState(initial = this.value)
+fun <T> StateFlow<T>.toComposeState(): State<T> {
+  return this.collectAsState()
 }
 
-// Compose state -> StateFlow
+// Compose State to StateFlow
 @Composable
-fun <T> State<T>.toFlow(): StateFlow<T> {
-  val f = remember { MutableStateFlow(this.value) }
+fun <T> State<T>.toStateFlow(): StateFlow<T> {
+  val flow = remember { MutableStateFlow(this.value) }
   LaunchedEffect(this.value) {
-    f.value = this.value
+    flow.value = this.value
   }
-  return f
+  return flow
 }
 ```
 
-This shows that in our context we can use Compose states and StateFlows interchangeably.
+**Conclusion:**
+
+**Behavioral Equivalence:** State<T> and StateFlow<T> (when collected via collectAsState()) are behaviorally equivalent in the context of reactivity in Jetpack Compose.
