@@ -136,34 +136,43 @@ This equivalence means that "It rains" and "The sidewalk is wet" share the same 
 
 This example shows how equivalence depends on specific properties and context, allowing us to understand when two statements are logically linked such that one being true guarantees the other is also true.
 
-### Proof of Equivalence: `MutableState` and `MutableStateFlow` in terms of Reactivity in Jetpack Compose
+### Proof of Equivalence: Compose `State` and `StateFlow` in terms of reactivity in Jetpack Compose
 
-In Jetpack Compose, both `MutableState` and `MutableStateFlow` exhibit reactivity. We demonstrate their equivalence by showing that each implies the same reactivity property in UI recomposition.
+In Jetpack Compose, both `State` and `StateFlow` exhibit reactivity. We demonstrate their equivalence by showing that each implies the same reactivity property in UI recomposition.
 
 **Definitions and Reactivity Property**
 
 1. **Reactivity Property**: A change in a state value triggers recomposition in any Composable observing that state.
 
-**Implications of `MutableState`**
+**Implications of Compose `State`**
 
-1. **Property**: If a variable is defined as `MutableState`, then any change in its value triggers recomposition of any Composable reading this `State`.
-   - **M**: "Variable is a `MutableState`" implies **C**: "Composable observing it recomposes on change" (M ⇒ C).
-
-2. **Property**: If a Composable recomposes due to observing a state, that state could be defined as `MutableState`.
-   - **C**: "Composable recomposes on state change" implies **M**: "State is a `MutableState`" (C ⇒ M).
+1. **Property**: If a variable is defined as `State`, then any change in its value triggers recomposition of any Composable reading this `State`.
+   - **S**: "Variable is a `State`" implies **C**: "Composable observing it recomposes on change" (S ⇒ C).
 
 **Implications of `MutableStateFlow`**
 
 1. **Property**: If a variable is defined as `MutableStateFlow`, any emission of a new value triggers recomposition in any Composable collecting it.
    - **F**: "Variable is a `MutableStateFlow`" implies **C**: "Composable observing it recomposes on new emission" (F ⇒ C).
 
-2. **Property**: If a Composable recomposes due to a state change, that state could be defined as `MutableStateFlow`.
-   - **C**: "Composable recomposes on state change" implies **F**: "State is a `MutableStateFlow`" (C ⇒ F).
-
 **Equivalence Statement**
 
-Since both `MutableState` and `MutableStateFlow` imply the same reactivity property in Jetpack Compose (that any state change triggers recomposition of dependent Composables), we conclude that within the context of reactivity in Compose:
+Since both `State` and `MutableStateFlow` imply the same reactivity property in Jetpack Compose (that any state change triggers recomposition of dependent Composables), we conclude that within the context of reactivity in Compose:
 
 - **M ⇔ F**
 
-Thus, `MutableState` and `MutableStateFlow` are equivalent in terms of their reactivity behavior in Compose. This equivalence holds specifically within the Compose framework, where both types ensure UI recomposition in response to state changes, though they may differ in other aspects outside this context.
+We can also prove that with Kotlin code:
+```kotlin
+// StateFlow -> Compose state
+@Composable
+fun <T> StateFlow<T>.toCompose() = this.collectAsState(this.value)
+
+// Compose state -> StateFlow
+@Composable
+fun <T> State<T>.toFlow(): StateFlow<T> {
+  val f = MutableStateFlow(this.value) 
+  LaunchedEffect(this.value) {
+    f.value = this.value
+  }
+  return f
+}
+```
