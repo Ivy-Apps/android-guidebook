@@ -73,7 +73,7 @@ A property is a set of implications defining characteristic of an object or conc
 3. Additionally, a square remains unchanged if rotated by 90°, 180°, or 270°:
    - **P**: Shape is a square ⇒ **S**: Rotation by 90°, 180°, or 270° leaves it unchanged
 
-These implications show that knowing a shape is a square allows us to logically derive its specific attributes and symmetry properties.
+These implications show that knowing a shape is a square allows us to logically derive its specific attributes and symmetry properties. Of course, from the above implications we can derive more implications (e.g. being a square implies having equal diagonals).
 
 ### Example 2: Reactivity in Jetpack Compose
 
