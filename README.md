@@ -210,3 +210,13 @@ In programming we often work with collections or need to analyze multiple possib
 - _(in this example such integer is 2 because 2+2=2*2)_
 
 ### Quantifier examples
+
+#### Example 1
+
+```kotlin
+fun hourlyRate(monthlyUsd: Double, hours: Int) = monthlyUsd / hours
+```
+- **(∀monthlyUsd∈Double)(∃hours∈Int)(hourlyRate(monthlyUsd, hours) ⇒ runtime exception)**
+- For every double `monthlyUsd`, there exists a `hours` integer that will make the `hourlyRate` function throw a runtime exception.
+- This can happen for **hours = 0**
+
