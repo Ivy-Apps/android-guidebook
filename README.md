@@ -158,13 +158,15 @@ In Jetpack Compose, both `State` and `StateFlow` exhibit reactivity. We demonstr
 
 Since both `State` and `MutableStateFlow` imply the same reactivity property in Jetpack Compose (that any state change triggers recomposition of dependent Composables), we conclude that within the context of reactivity in Compose:
 
-- **M ⇔ F**
+- **M ⇔ F** (up to reactivity in Compose)
 
 We can also prove that with Kotlin code:
 ```kotlin
 // StateFlow -> Compose state
 @Composable
-fun <T> StateFlow<T>.toCompose() = this.collectAsState(this.value)
+fun <T> StateFlow<T>.toCompose(): State<T> {
+  return this.collectAsState(initial = this.value)
+}
 
 // Compose state -> StateFlow
 @Composable
@@ -176,3 +178,5 @@ fun <T> State<T>.toFlow(): StateFlow<T> {
   return f
 }
 ```
+
+This shows that in our context we can use Compose states and StateFlows interchangeably.
