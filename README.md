@@ -171,7 +171,7 @@ fun <T> StateFlow<T>.toCompose(): State<T> {
 // Compose state -> StateFlow
 @Composable
 fun <T> State<T>.toFlow(): StateFlow<T> {
-  val f = MutableStateFlow(this.value) 
+  val f = remember { MutableStateFlow(this.value) }
   LaunchedEffect(this.value) {
     f.value = this.value
   }
