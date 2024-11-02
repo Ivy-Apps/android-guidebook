@@ -36,6 +36,8 @@ Think of it this way: "If it rains, then the ground gets wet." In logical terms,
 - **P**: "It rains."
 - **Q**: "The ground gets wet."
 
+> **P ⇒ Q** is read as _P: "It rains" implies that Q: "The ground gets wet"._
+
 This means if it's raining, we can be sure that the ground is wet. However, the reverse isn't always true: if the ground is wet, it doesn't guarantee it has rained—it could be wet for other reasons, like a sprinkler system.
 
 So, an implication is one-way: **P ⇒ Q** does not mean **Q ⇒ P**. This is a key part of formal logic that helps build precise reasoning.
