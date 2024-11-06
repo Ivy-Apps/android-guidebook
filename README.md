@@ -6,7 +6,9 @@ Android Development is above all software engineering, which, like any engineeri
 
 ## Why should I care?
 
-It's easy to get lost on the hype train of Modern Android Development where each year, new and shiny libraries/architecture patterns/frameworks emerge _(and ofc others get deprecated)_. While I totally support the innovation in our field and the ease of use that comes from it, most folks only scratch the surface of the real engineering behind it...
+![Hype Train](./hype-train.webp)
+
+It's easy to get lost on the hype train of Modern Android Development where each year... new and shiny libraries/architecture/patterns/frameworks emerge _(and ofc others get deprecated)_. While I totally support the innovation in our field and the ease of use that comes from it, most folks only scratch the surface of the real engineering behind it...
 
 Instead of trying to memorize the "latest and greatest" functions or classes to use (which will eventually get deprecated anyway), I want us to re-discover and re-invent the technology and mathematical principles behind them. 
 
