@@ -4,7 +4,7 @@
 
 Android development isn’t just about cranking out code; it’s a branch of **software engineering**, and like any engineering discipline, it’s grounded in **science**. Beneath every library, framework, and pattern lies a foundation of **mathematics** and **formal logic**.
 
-This guidebook isn’t here to just teach you how to use tools; it’s here to challenge you to think like an engineer. Together, we’ll dissect Android development through the lens of **scientific principles**—arming you with the knowledge to not just follow best practices but to deeply understand and, when necessary, improve upon them.
+This guidebook isn’t here to just teach you how to use tools; it’s here to challenge you to **think like an engineer**. Together, we’ll dissect Android development through the lens of scientific principles—arming you with the knowledge to not just follow best practices but to deeply understand and, when necessary, improve upon them.
 
 ## Why Should I Care?
 
