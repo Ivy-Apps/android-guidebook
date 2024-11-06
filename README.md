@@ -4,25 +4,23 @@
 
 Android Development is above all software engineering, which, like any engineering field, is based on science. When it comes to science, math and formal logic rule the game. In this guidebook, we'll look into Android Development and software engineering through the lens of science.
 
-## Why should I care?
+## Why Should I Care?
 
 ![Hype Train](./hype-train.webp)
 
-It's easy to get lost on the **hype train** of Modern Android Development where each year is the same: new and shiny libraries/practices emerge and others ofc get deprecated. While I totally support the innovation in our field and the ease of use that comes from it, most folks only scratch the surface of the real engineering behind it...
+Modern Android Development often feels like an endless ride on the **hype train**: every year brings flashy new libraries and practices, while last year’s tools are quickly deprecated. It’s easy to get caught up in this cycle, chasing trends without digging into the real engineering beneath the surface.
 
-Instead of trying to memorize the "latest and greatest" functions to use (which will eventually get deprecated anyway), I want us to re-discover and re-invent the technology and mathematical principles behind them. 
+But here’s the thing: the shiny stuff won’t last. Instead of memorizing the latest APIs (that’ll be obsolete soon anyway), let’s dive deeper. This guidebook focuses on **re-discovering and re-inventing** the fundamental principles and technologies that power those shiny tools.
 
-I believe, re-inventing the wheel is the best way to put yourself into the shoes of library/API creators. Only then you can truly understand why certain limitations exist, what trade-offs were made and more importantly exactly why.
+Why reinvent the wheel? Because it’s the best way to step into the shoes of library and API creators. Only then can you truly grasp their design choices—their trade-offs, limitations, and, most importantly, their **why**.
 
-> [!TIP]
-> Once you understand something well enough, so that you can "rebuild it from scratch if left alone in a basement without internet for a week", only then you can confidently weild and use it. And just maybe, maybe you can invent something new in the process.
+> [!TIP]  
+> Mastery is when you can “rebuild it from scratch if left alone in a basement without internet for a week.” Only then will you wield these tools with confidence—and who knows, you might invent something better.
 
-The goal of this guidebook is not just to curate the new stuff in the Android world but rather go back to first principles and understand them deeply under the hood
+This guidebook won’t just skim the surface of new trends. It’s about going back to **first principles**, understanding them deeply, and making Android development feel straightforward—even boring. By the end, building complex Android or Kotlin Multiplatform apps should feel trivial, not overwhelming.
 
-My goal is at the end of this journey: creating complex Android (or even Kotlin Multiplatform apps) to be rather trivial/dull/boring than challenging/complex/hard.
-
-> [!NOTE]
-> However, before we begin with the exciting stuff, we need to get familiar with the formal language so we can communicate effectively and deeply understand our technical approaches along with their trade-offs.
+> [!NOTE]  
+> Before we jump into the exciting parts, we need to establish a shared understanding of the formal language and core concepts that will guide us through this journey.
 
 ## Topics
 - [Navigation]()
