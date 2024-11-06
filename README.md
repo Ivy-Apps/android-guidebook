@@ -10,16 +10,16 @@ Android Development is above all software engineering, which, like any engineeri
 
 It's easy to get lost on the **hype train** of Modern Android Development where each year is the same: new and shiny libraries/practices emerge and others ofc get deprecated. While I totally support the innovation in our field and the ease of use that comes from it, most folks only scratch the surface of the real engineering behind it...
 
-Instead of trying to memorize the "latest and greatest" functions or classes to use (which will eventually get deprecated anyway), I want us to re-discover and re-invent the technology and mathematical principles behind them. 
+Instead of trying to memorize the "latest and greatest" functions to use (which will eventually get deprecated anyway), I want us to re-discover and re-invent the technology and mathematical principles behind them. 
 
-I believe, re-inventing the wheel is the best way to put yourself into the shoes of library/API creators - only then you can truly understand why certain limitations exist, what trade-offs were made and more importantly exactly why.
+I believe, re-inventing the wheel is the best way to put yourself into the shoes of library/API creators. Only then you can truly understand why certain limitations exist, what trade-offs were made and more importantly exactly why.
 
 > [!TIP]
-> Once you understand something well enough, so that you can rebuild it from scratch if left alone in a basement without internet for a week, only then you can confidently weild and use it. And just maybe, maybe you can invent something new along the way.
+> Once you understand something well enough, so that you can "rebuild it from scratch if left alone in a basement without internet for a week", only then you can confidently weild and use it. And just maybe, maybe you can invent something new in the process.
 
-The goal of this guidebook is to "re-invent" the core concepts of Modern Android Developer, understand them deeply, and at the end see how trivial is to build quality Android apps in 2024. 
+The goal of this guidebook is not just to curate the new stuff in the Android world but rather go back to first principles and understand them deeply under the hood
 
-My goal is at the end of this journey: creating complex Android (or even Kotlin Multiplatform apps) to be rather trivial/dull/boring compared to challenging/exciting.
+My goal is at the end of this journey: creating complex Android (or even Kotlin Multiplatform apps) to be rather trivial/dull/boring than challenging/complex/hard.
 
 > [!NOTE]
 > However, before we begin with the exciting stuff, we need to get familiar with the formal language so we can communicate effectively and deeply understand our technical approaches along with their trade-offs.
