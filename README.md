@@ -27,11 +27,13 @@ Android Development is above all software engineering, which, like any engineeri
 
 ## Why should I care?
 
-It's easy to get on the hype train of Modern Android Development and its trendy libraries, architecture patterns and frameworks. While I totally support the innovation in our field and the ease of use that comes from it, most folks only scratch the surface of the engineering behind it... I've often seen debates on LinkedIn whether to use A or B and why one is clean and the other not.
+It's easy to get lost on the hype train of Modern Android Development where each year new and shiny libraries, architecture patterns and frameworks emerge. While I totally support the innovation in our field and the ease of use that comes from it, most folks only scratch the surface of the engineering behind it... I've often seen debates on LinkedIn whether to use A or B and why one is clean and the other not.
 
-Instead of trying to memorize every new and shiny function/class to use (which will eventually get deprecated anyway), I want us to re-discover and re-invent the wheel. I believe, this is the best way to put yourself into the shoes of library/API creators and truly understand why certain limitations exist and what trade-offs were made and why.
+Instead of trying to memorize every new and trendy function/class/API to use (which will eventually get deprecated anyway), I want us to re-discover and re-invent the wheel. I believe, this is the best way to put yourself into the shoes of library/API creators and truly understand why certain limitations exist and what trade-offs were made and why.
 
-Once you understand it and can rebuild it from scratch if left in a basement without internet, then you can confidently use it and just maybe invent something new along the way.
+Once you understand it enough so you can rebuild it from scratch if left alone in a basement without internet, only then you can confidently use it. And just maybe, maybe you can invent something new along the way.
+
+The goal of this guidebook is to re-invent the core topics of Modern Android Developer, understand them and at the end see how trivial is to build quality Android apps in 2024. However, before we dive into the topics, we must learn some "weird" math.
 
 # Formal language 
 
