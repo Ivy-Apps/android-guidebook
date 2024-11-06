@@ -1,8 +1,10 @@
 # Android Guidebook
 
-> An opinionated collection of learnings through my 8 years of Android experience as a founding engineer in four startups and a contractor at Toptal and Reddit.
+> A no-nonsense, opinionated collection of hard-earned lessons from 8 years of Android development—as a founding engineer at four startups and a contractor at Toptal and Reddit.
 
-Android Development is above all software engineering, which, like any engineering field, is based on science. When it comes to science, math and formal logic rule the game. In this guidebook, we'll look into Android Development and software engineering through the lens of science.
+Android development isn’t just about cranking out code; it’s a branch of **software engineering**, and like any engineering discipline, it’s grounded in **science**. Beneath every library, framework, and pattern lies a foundation of **mathematics** and **formal logic**.
+
+This guidebook isn’t here to just teach you how to use tools; it’s here to challenge you to think like an engineer. Together, we’ll dissect Android development through the lens of **scientific principles**—arming you with the knowledge to not just follow best practices but to deeply understand and, when necessary, improve upon them.
 
 ## Why Should I Care?
 
