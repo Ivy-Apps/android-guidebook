@@ -244,6 +244,6 @@ fun hourlyRate(monthlyUsd: Double, hours: Int): Double {
 > [!TIP]
 > Quantifiers are chained from left to right. You can treat them as nested `for` loops where the first quantifier surrounds the second one and so on. For example, **(∀a∈Int)(∀b∈Int: b != a)(∃x∈Double)(a > x > b)** means "for every integer **a** and for every intereger **b** that is different from **a**, there exists a double **x** that is between **a** and **b**".
 
-## Wrapping up
+## Wrapping up...
 
 
