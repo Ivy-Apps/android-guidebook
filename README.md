@@ -25,6 +25,14 @@ Android Development is above all software engineering, which, like any engineeri
 - [Android Studio Live Templates]()
 - [Centralize your dependencies with a version catalog]()
 
+## Why should I care?
+
+It's easy to get on the hype train of Modern Android Development and its trendy libraries, architecture patterns and frameworks. While I totally support the innovation in our field and the ease of use that comes from it, most folks only scratch the surface of the engineering behind it... I've often seen debates on LinkedIn whether to use A or B and why one is clean and the other not.
+
+Instead of trying to memorize every new and shiny function/class to use (which will eventually get deprecated anyway), I want us to re-discover and re-invent the wheel. I believe, this is the best way to put yourself into the shoes of library/API creators and truly understand why certain limitations exist and what trade-offs were made and why.
+
+Once you understand it and can rebuild it from scratch if left in a basement without internet, then you can confidently use it and just maybe invent something new along the way.
+
 # Formal language 
 
 ## Implications
