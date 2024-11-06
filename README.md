@@ -246,7 +246,7 @@ fun hourlyRate(monthlyUsd: Double, hours: Int): Double {
 
 ## Wrapping up...
 
-That’s mostly what we need from formal mathematical language and logic to get started with the engineering topics. If you want to dive deeper, I highly recommend checking out the [Introduction to Mathematical Thinking](https://www.coursera.org/learn/mathematical-thinking) course by Dr. Keith Devlin from Stanford. It’s an excellent resource to sharpen your reasoning skills.
+That’s mostly what we need from formal mathematical language and logic to get started with the engineering topics. If you want to dive deeper, I highly recommend checking out the free [Introduction to Mathematical Thinking course](https://www.coursera.org/learn/mathematical-thinking) by Dr. Keith Devlin from Stanford. It’s an excellent resource to sharpen your reasoning skills.
 
 ---
 
