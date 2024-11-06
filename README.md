@@ -15,7 +15,9 @@ I believe, re-inventing the wheel is the best way to put yourself into the shoes
 > [!TIP]
 > Once you understand something well enough, so that you can rebuild it from scratch if left alone in a basement without internet for a week, only then you can confidently weild and use it. And just maybe, maybe you can invent something new along the way.
 
-The goal of this guidebook is to re-invent the core topics of Modern Android Developer, understand them deeply, and at the end see how trivial is to build quality Android apps in 2024. My goal, is at the end of the journey creating complex Android or even Kotlin Multiplatform apps to be rather dull/boring/obvious compared to challenging and exciting.
+The goal of this guidebook is to "re-invent" the core concepts of Modern Android Developer, understand them deeply, and at the end see how trivial is to build quality Android apps in 2024. 
+
+My goal is at the end of this journey: creating complex Android (or even Kotlin Multiplatform apps) to be rather trivial/dull/boring compared to challenging/exciting.
 
 > [!NOTE]
 > However, before we begin with the exciting stuff, we need to get familiar with the formal language so we can communicate effectively and deeply understand our technical approaches along with their trade-offs.
