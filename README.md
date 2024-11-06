@@ -40,8 +40,8 @@ This guidebook won’t just skim the surface of new trends. It’s about going b
 - [Android Studio Live Templates]()
 - [Centralize your dependencies with a version catalog]()
 
-> [!TIP]
-> Before deep diving to the Android topics, it's recommended that you know what's an "implication", "equivalence", "set" and the basics of formal logic and maths. If you're unsure, read this README till the end. It's quite short and worst-case you'll learn something new or reinforce what you know.
+> [!TIP]  
+> To get the most out of this guidebook, make sure you're familiar with some foundational concepts: **implication**, **equivalence**, **sets**, and the basics of **formal logic** and **mathematics**. If any of these sound unfamiliar, no worries—just stick around and read through to the end. Worst case? You’ll pick up something new. Best case? You’ll reinforce what you already know and feel even more confident.
 
 # Formal language 
 
