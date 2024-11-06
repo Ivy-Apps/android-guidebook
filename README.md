@@ -6,7 +6,7 @@ Android Development is above all software engineering, which, like any engineeri
 
 ## Why should I care?
 
-It's easy to get lost on the hype train of Modern Android Development where each year, new and shiny libraries, architecture patterns and frameworks emerge _(and ofc others get deprecated)_. While I totally support the innovation in our field and the ease of use that comes from it, most folks only scratch the surface of the real engineering behind it...
+It's easy to get lost on the hype train of Modern Android Development where each year, new and shiny libraries/architecture patterns/frameworks emerge _(and ofc others get deprecated)_. While I totally support the innovation in our field and the ease of use that comes from it, most folks only scratch the surface of the real engineering behind it...
 
 Instead of trying to memorize the "latest and greatest" functions or classes to use (which will eventually get deprecated anyway), I want us to re-discover and re-invent the technology and mathematical principles behind them. 
 
@@ -39,7 +39,7 @@ The goal of this guidebook is to re-invent the core topics of Modern Android Dev
 - [Centralize your dependencies with a version catalog]()
 
 > [!TIP]
-> Before deep diving to the Android topics, it's recommended that you know what's an "implication", "equivalence", "sets" and the basics of formal logic and maths. If you're unsure, read this README till the end - it's quite short and worst-case you'll learn something new or reinforce what you know.
+> Before deep diving to the Android topics, it's recommended that you know what's an "implication", "equivalence", "set" and the basics of formal logic and maths. If you're unsure, read this README till the end. It's quite short and worst-case you'll learn something new or reinforce what you know.
 
 # Formal language 
 
