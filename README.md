@@ -230,9 +230,7 @@ In programming we often work with collections or need to analyze multiple possib
 - There exists an integer **n** that is smaller than 10, such that **n+n=n*n**.
 - _(in this example such integer is 2 because 2+2=2*2)_
 
-### Quantifiers examples
-
-#### Example 1
+### Combining Quantifiers
 
 ```kotlin
 fun hourlyRate(monthlyUsd: Double, hours: Int): Double {
@@ -246,4 +244,6 @@ fun hourlyRate(monthlyUsd: Double, hours: Int): Double {
 > [!TIP]
 > Quantifiers are chained from left to right. You can treat them as nested `for` loops where the first quantifier surrounds the second one and so on. For example, **(∀a∈Int)(∀b∈Int: b != a)(∃x∈Double)(a > x > b)** means "for every integer **a** and for every intereger **b** that is different from **a**, there exists a double **x** that is between **a** and **b**".
 
-#### Example 2
+## Wrapping up
+
+
