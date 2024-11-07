@@ -240,6 +240,10 @@ In programming we often work with collections or need to analyze multiple possib
 - There exists an integer **n** that is smaller than 10, such that **n+n=n*n**.
 - _(in this example such integer is 2 because 2+2=2*2)_
 
+**∄ (there does not exist)** states that there is no such value that satisfies some property or conditions.
+- **(∄n∈Int)[n*2 is odd]**
+- There does not exist an integer **n** that when multiplied by 2 is an odd number.
+
 ### Combining Quantifiers
 
 ```kotlin
