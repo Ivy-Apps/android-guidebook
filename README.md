@@ -26,22 +26,24 @@ This guidebook won’t just skim the surface of new trends. It’s about going b
 
 ## Topics
 - [Navigation](/navigation/README.md)
-- [Modularization]()
-- [Unit Testing]()
-- [Property-based Testing]()
-- [CI & CD]()
-- [Data Layer]()
-- [Domain Layer]()
-- [UI Layer]()
-- [Scaling Architecture]()
-- [MVI]()
-- [Efficient Compose UI]()
-- [Screenshot testing UI]()
-- [Dependency Injection (DI)]()
-- [Idiomatic Kotlin for expressing complex logic elegantly]()
-- [Gradle Build system]()
-- [Android Studio Live Templates]()
-- [Centralize your dependencies with a version catalog]()
+- [Modularization]() 🚧
+- [Unit Testing]() 🚧
+- [Property-based Testing]() 🚧
+- [CI & CD]() 🚧
+- [Data Layer]() 🚧
+- [Domain Layer]() 🚧
+- [UI Layer]() 🚧
+- [Scaling Architecture]() 🚧
+- [MVI]() 🚧
+- [Efficient Compose UI]() 🚧
+- [Screenshot testing UI]() 🚧
+- [Dependency Injection (DI)]() 🚧
+- [Idiomatic Kotlin for expressing complex logic elegantly]() 🚧
+- [Gradle Build system]() 🚧
+- [Android Studio Live Templates]() 🚧
+- [Centralize your dependencies with a version catalog]() 🚧
+
+> *🚧 means that topic is under construction and is not read, yet
 
 > [!TIP]  
 > To get the most out of this guidebook, make sure you're familiar with some foundational concepts: **implication**, **equivalence**, **sets**, and the basics of **formal logic** and **mathematics**. If any of these sound unfamiliar, no worries—just stick around and read through to the end. Worst case? You’ll pick up something new. Best case? You’ll reinforce what you already know and feel even more confident.
