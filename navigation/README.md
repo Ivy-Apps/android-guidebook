@@ -1,0 +1,15 @@
+# Navigation
+
+Navigation is essential for every Android app. 
+It allows users to view different screens and surfaces within the app
+and find what they need.
+
+Navigation can become complex topic if tackled as one big chunk so we'll start
+small and simple. We'll build a Compose system that can navigates between screens.
+
+So as with every engineering problem let's start with its definition.
+Qe mentioned a few times the word "screen" but what exactly does it mean?
+
+**Def.Screen:**
+Screen is a ...
+
