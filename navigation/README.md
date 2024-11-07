@@ -29,4 +29,9 @@ In most apps, the user should be able to navigate back-and-forth between Screens
 
 ## Navigation definition
 
-(∀navigation)(∃backstack∈[Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)))(∀s1∈Screen)(∀s2∈Screen)[
+(∀nav∈Navigation)(∃backstack∈[Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)))(∀s1,s2,s3∈Screen)[
+  (backstack = [] ∧ nav.push(s1) ⇒ nav.current = s1 ∧ backstack = [s1]) ∧
+  (backstack = [s1, s2] ∧ nav.pop() ⇒ nav.current = s1 ∧ backstack = [s1])
+  (backstack = [s1, s2] ∧ nav.push([s3]) ∧ nav.pop() ⇒ nav.current = s2 ∧ backstack = [s1, s2]) ∧
+  
+]
