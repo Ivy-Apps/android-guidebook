@@ -222,6 +222,11 @@ In programming we often work with collections or need to analyze multiple possib
 **∀** (every) states that some property holds for all possible values in the set.
 - **(∀n∈Int: n < Int.MAX_VALUE/2)(x=2*n ⇒ x even number)**
 - Every integer **n** that is smaller than Int.MAX_VALUE/2 when multiplied by 2 is an even number.
+
+**∀(a,b∈{1,2,3})** implies that a, b can be all possible permutations of two numbers picked from {1,2,3}, precisely:
+- (1,1), (1,2), (1,3)
+- (2,1), (2,2), (2,3)
+- (3,1), (3,2), (3,3)
   
 ### **∃** there exists
 
