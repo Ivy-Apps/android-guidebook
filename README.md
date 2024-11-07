@@ -44,7 +44,7 @@ This guidebook won’t just skim the surface of new trends. It’s about going b
 - [Centralize your dependencies with a version catalog]() 🚧
 
 > [!TIP]  
-> To get the most out of this guidebook, make sure you're familiar with some foundational concepts: **implication**, **equivalence**, **sets**, and the basics of **formal logic** and **mathematics**. If any of these sound unfamiliar, no worries—just stick around and read through to the end. Worst case? You’ll pick up something new. Best case? You’ll reinforce what you already know and feel even more confident.
+> To get the most out of this guidebook, make sure you're familiar with some foundational concepts: **implication**, **equivalence**, **sets**, and the basics of **formal logic** and **mathematics**. If any of these sound unfamiliar, no worries—just stick around and read through to the end. Best case? You’ll pick up something new. Worst case? You’ll reinforce what you already know and feel even more confident.
 
 > *🚧 means that topic is under construction and is not read, yet
 
