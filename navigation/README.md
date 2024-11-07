@@ -32,7 +32,7 @@ In most apps, the user should be able to navigate back-and-forth between Screens
 **(∀app∈Android app)(∃nav∈Navigation)(∃backstack∈[Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)))(∀s1,s2,s3∈Screen)[**
 
 1. *nav.backstack := [] ∧ nav.push(s1) ⇒ nav.current = s1 ∧ nav.backstack = [s1]*
-2. *∀b∈Stack: nav.backstack := b ∧ nav.push(s1) ⇒ nav.current = s1 ∧ nav.backstack = [b] + s1*
+2. *∀b∈Stack: nav.backstack := b ∧ nav.push(s1) ⇒ nav.current = s1 ∧ nav.backstack = b.push(s1)*
 3. *nav.backstack := [s1, s2] ∧ nav.pop() ⇒ nav.current = s1 ∧ nav.backstack = [s1]*
 4. *nav.backstack := [s1] ∧ nav.pop() ⇒ app.isForeground = false ∧ nav.current = s1 ∧ nav.backstack = [s1]*
 5. *nav.backstack := [] ∧ nav.pop() ⇒ app.isForeground = false ∧ nav.current = ∅ ∧ nav.backstack = []*
@@ -46,3 +46,11 @@ In most apps, the user should be able to navigate back-and-forth between Screens
 > - **∧ (AND)**
 > - **∨ (OR)**
 > - **∅ (null)**
+> - **⊥ (bottom)**: computation that produces error or goes into infinite loop
+
+> [!NOTE]
+> **Stack:**
+>
+> - Stack([1, 2]).push(3) = Stack([1, 2, 3])
+> - Stack([1, 2, 3]).pop() = Stack([1, 2])
+> - Stack([]).pop() = ⊥
