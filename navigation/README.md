@@ -46,7 +46,7 @@ In most apps, the user should be able to navigate back-and-forth between Screens
 > - **∧ (AND)**
 > - **∨ (OR)**
 > - **¬ (NOT)**
-> - **∅ (null)**
+> - **∅ (null, undefined)**
 > - **⊥ (bottom)**: computation that produces an error or goes into an infinite loop
 
 > [!NOTE]
