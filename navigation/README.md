@@ -34,8 +34,8 @@ In most apps, the user should be able to navigate back-and-forth between Screens
 1. *nav.backstack := [] ∧ nav.push(s1) ⇒ nav.current = s1 ∧ nav.backstack = [s1]*
 2. *∀b∈Stack: nav.backstack := b ∧ nav.push(s1) ⇒ nav.current = s1 ∧ nav.backstack = b.push(s1)*
 3. *nav.backstack := [s1, s2] ∧ nav.pop() ⇒ nav.current = s1 ∧ nav.backstack = [s1]*
-4. *nav.backstack := [s1] ∧ nav.pop() ⇒ app.isForeground = false ∧ nav.current = s1 ∧ nav.backstack = [s1]*
-5. *nav.backstack := [] ∧ nav.pop() ⇒ app.isForeground = false ∧ nav.current = ∅ ∧ nav.backstack = []*
+4. *nav.backstack := [s1] ∧ nav.pop() ⇒ ¬app.isForeground ∧ nav.current = s1 ∧ nav.backstack = [s1]*
+5. *nav.backstack := [] ∧ nav.pop() ⇒ ¬app.isForeground ∧ nav.current = ∅ ∧ nav.backstack = []*
 6. *nav.push(s1) ∧ nav.pop() ⇔ nav*
 
 **]**
@@ -45,6 +45,7 @@ In most apps, the user should be able to navigate back-and-forth between Screens
 > - **= (Equal to)**: reads value, e.g. x = 5 means that **x** is equal to 5
 > - **∧ (AND)**
 > - **∨ (OR)**
+> - **¬ (NOT)**
 > - **∅ (null)**
 > - **⊥ (bottom)**: computation that produces an error or goes into an infinite loop
 
