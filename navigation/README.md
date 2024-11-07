@@ -39,3 +39,8 @@ In most apps, the user should be able to navigate back-and-forth between Screens
 6. **nav.push(s1) ∧ nav.pop() ⇔ nav**
 
 **]**
+
+> [!TIP]
+> - **∧ (AND)**
+> - **∨ (OR)**
+> - **∅ (null)**
