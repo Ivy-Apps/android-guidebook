@@ -8,11 +8,12 @@ Navigation can become complex topic if tackled as one big chunk so we'll start
 small and simple. We'll build a Compose system that can navigates between screens.
 
 So as with every engineering problem let's start with its definition.
-Qe mentioned a few times the word "screen" but what exactly does it mean?
+We mentioned the word "screen" a few times but what exactly does it mean?
 
-> [!INFO]
+> [!NOTE]
 > **Definition: Screen**
-> 
+
+
 > A **Screen** is a user interface (UI) component that occupies the entire device viewport.  
 > As the name suggests, it takes up the whole screen, providing a focused context for user interaction.
 
