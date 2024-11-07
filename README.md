@@ -227,6 +227,11 @@ In programming we often work with collections or need to analyze multiple possib
 - (1,1), (1,2), (1,3)
 - (2,1), (2,2), (2,3)
 - (3,1), (3,2), (3,3)
+
+**∀(first, middle, last ∈ {"John","Doe"})**:
+- "John John John", "John John Doe", "John Doe John", "John Doe Doe"
+- "Doe Doe Doe", "Doe Doe John", "Doe John Doe", "Doe John John"
+
   
 ### **∃** there exists
 
