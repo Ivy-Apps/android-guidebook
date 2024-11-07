@@ -28,10 +28,14 @@ A Screen something that has a compsable that renders UI content on the device's 
 In most apps, the user should be able to navigate back-and-forth between Screens but let's formally define what a simple navigation should be able to do.
 
 ## Navigation definition
+ 
+(∀app∈Android app)(∀nav∈Navigation)(∃backstack∈[Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)))(∀s1,s2,s3∈Screen)[
 
-(∀nav∈Navigation)(∃backstack∈[Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)))(∀s1,s2,s3∈Screen)[
-  (backstack = [] ∧ nav.push(s1) ⇒ nav.current = s1 ∧ backstack = [s1]) ∧
-  (backstack = [s1, s2] ∧ nav.pop() ⇒ nav.current = s1 ∧ backstack = [s1])
-  (backstack = [s1, s2] ∧ nav.push([s3]) ∧ nav.pop() ⇒ nav.current = s2 ∧ backstack = [s1, s2]) ∧
-  
+1. backstack = [] ∧ nav.push(s1) ⇒ nav.current = s1 ∧ backstack = [s1]
+2. ∀b∈Stack: backstack = b ∧ nav.push(s1) ⇒ nav.current = s1 ∧ backstack = [b] + s1
+3. backstack = [s1, s2] ∧ nav.pop() ⇒ nav.current = s1 ∧ backstack = [s1]
+4. backstack = [s1] ∧ nav.pop() ⇒ app.isForeground = false ∧ nav.current = s1 ∧ backstack = [s1]
+5. backstack = [] ∧ nav.pop() ⇒ app.isForeground = false ∧ nav.current = ∅ ∧ backstack = []
+6. nav.push(s1) ∧ nav.pop() ⇔ nav
+
 ]
