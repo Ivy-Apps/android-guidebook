@@ -12,8 +12,6 @@ We mentioned the word "screen" a few times but what exactly does it mean?
 
 > [!NOTE]
 > **Definition: Screen**
-
-
-> A **Screen** is a user interface (UI) component that occupies the entire device viewport.  
-> As the name suggests, it takes up the whole screen, providing a focused context for user interaction.
+> 
+> A **Screen** is a user interface (UI) component that occupies the entire device viewport. As the name suggests, it takes up the whole screen, providing a focused context for user interaction.
 
