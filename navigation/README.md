@@ -26,3 +26,7 @@ interface Screen {
 A Screen something that has a compsable that renders UI content on the device's screen. So far, so good!
 
 In most apps, the user should be able to navigate back-and-forth between Screens but let's formally define what a simple navigation should be able to do.
+
+## Navigation definition
+
+(∀navigation)(∃backstack∈[Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)))(∀s1∈Screen)(∀s2∈Screen)[
