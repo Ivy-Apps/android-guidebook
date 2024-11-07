@@ -15,3 +15,10 @@ We mentioned the word "screen" a few times but what exactly does it mean?
 > 
 > A **Screen** is a user interface (UI) component that occupies the entire device viewport. As the name suggests, it takes up the whole screen, providing a focused context for user interaction.
 
+And in code, we can define like this:
+```kotlin
+interface Screen {
+  @Composable
+  fun Content()
+}
+```
