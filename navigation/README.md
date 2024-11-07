@@ -23,4 +23,6 @@ interface Screen {
 }
 ```
 
-A Screen something that has a compsable that renders UI content on the device's screen.
+A Screen something that has a compsable that renders UI content on the device's screen. So far, so good!
+
+In most apps, the user should be able to navigate back-and-forth between Screens but let's formally define what a simple navigation should be able to do.
