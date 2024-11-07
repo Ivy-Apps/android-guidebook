@@ -22,3 +22,5 @@ interface Screen {
   fun Content()
 }
 ```
+
+A Screen something that has a compsable that renders UI content on the device's screen.
