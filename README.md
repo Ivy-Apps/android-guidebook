@@ -25,7 +25,7 @@ This guidebook won’t just skim the surface of new trends. It’s about going b
 > Before we jump into the exciting parts, we need to establish a shared understanding of the formal language and core concepts that will guide us through this journey.
 
 ## Topics
-- [Navigation]()
+- [Navigation](/navigation/README.md)
 - [Modularization]()
 - [Unit Testing]()
 - [Property-based Testing]()
