@@ -41,7 +41,8 @@ In most apps, the user should be able to navigate back-and-forth between Screens
 **]**
 
 > [!TIP]
-> - **:= (Is defined to be)**: x := 5 means we set the value of 5 to **x**
+> - **:= (Is defined to be)**: assigns value, e.g. x := 5 means we set the value of 5 to **x**
+> - **= (Equal to)**: reads value, e.g. x = 5 means that **x** is equal to 5
 > - **∧ (AND)**
 > - **∨ (OR)**
 > - **∅ (null)**
