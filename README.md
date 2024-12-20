@@ -268,4 +268,6 @@ That’s mostly what we need from formal mathematical language and logic to get 
 
 # [🚀 Let's go!](#topics)
 
+## Star History
 
+[![Star History Chart](https://api.star-history.com/svg?repos=Ivy-Apps/android-guidebook&type=Date)](https://star-history.com/#Ivy-Apps/android-guidebook&Date)
