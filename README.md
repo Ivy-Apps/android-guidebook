@@ -268,6 +268,8 @@ That’s mostly what we need from formal mathematical language and logic to get 
 
 # [🚀 Let's go!](https://ivylearn.app)
 
+If you like such content, I got something better for you - [Ivy Learn](https://ivylearn.app) ✨️
+
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Ivy-Apps/android-guidebook&type=Date)](https://star-history.com/#Ivy-Apps/android-guidebook&Date)
