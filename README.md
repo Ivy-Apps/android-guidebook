@@ -266,7 +266,7 @@ That’s mostly what we need from formal mathematical language and logic to get 
 
 ---
 
-# [🚀 Let's go!](#topics)
+# [🚀 Let's go!](https://ivylearn.app)
 
 ## Star History
 
