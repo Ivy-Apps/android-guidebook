@@ -6,6 +6,9 @@ Android development isn’t just about cranking out code; it’s a branch of **s
 
 This guidebook isn’t here to just teach you how to use tools; it’s here to challenge you to **think like an engineer**. Together, we’ll dissect Android development through the lens of scientific principles—arming you with the knowledge to not just follow best practices but to deeply understand and, when necessary, improve upon them.
 
+> [!TIP]
+> Become a better software engineer. Learn algorithms, data structures, architecture and software design from first principles... [ivylearn.app](https://ivylearn.app/) ✨
+
 ## Why Should I Care?
 
 ![Hype Train](./hype-train.webp)
